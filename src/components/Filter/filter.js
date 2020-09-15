@@ -84,19 +84,25 @@ function Filter() {
       status: true
     }
   ]);
-  console.log(moduleFilter.filter(module=>module.status));
+
   const generateFilterPill = () => {
     return (
       <div className="filter-view">
         {moduleFilter.filter(module => module.status).map((module, index) => {
           return (
-            <div className="filter-mini-pill" key={index}>
+            <div className="filter-mini-pill" key={index} onClick={() => updateFilter(index)}>
               {module.title}
             </div>
           );
         })}
       </div>
     )
+  }
+
+  const updateFilter = (index) => {
+    let copy = [...moduleFilter];
+    copy[index].status = !copy[index].status;
+    setModuleFilter(copy);
   }
 
   return (
