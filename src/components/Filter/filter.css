@@ -2,6 +2,7 @@
   border: 1px solid black;
   margin: 0% 10%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .filter-mini-pill {
