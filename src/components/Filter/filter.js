@@ -88,9 +88,9 @@ function Filter() {
   const generateFilterPill = () => {
     return (
       <div className="filter-view">
-        {moduleFilter.filter(module => module.status).map((module, index) => {
+        {moduleFilter.map((module, index) => {
           return (
-            <div className="filter-mini-pill" key={index} onClick={() => updateFilter(index)}>
+            <div className={`filter-mini-pill ${module.status ? "active" : "not-active"}`} key={index} onClick={() => updateFilter(index)}>
               {module.title}
             </div>
           );

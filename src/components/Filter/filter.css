@@ -23,3 +23,10 @@
   padding: 0px;
   text-align: left;
 }
+
+.not-active {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  background-color: darkgrey;
+}
+
