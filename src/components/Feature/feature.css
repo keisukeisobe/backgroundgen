@@ -1,3 +1,16 @@
+.feature-container {
+  display: flex;
+  margin: 0% 10%;
+  overflow: auto;
+  max-height: 680px;
+}
+
+.feature-list {
+  width: 50%;
+  border: 1px solid black;
+  overflow: auto;
+}
+
 .secondary-header {
   text-align: left;
   margin-left: 10%;
@@ -5,5 +18,38 @@
 
 .background-pill {
   text-align: left;
-  margin-left: 10%;
+}
+
+.feature-details {
+  width: 50%;
+  text-align: left;
+  border: 1px solid black;
+  margin-left: 2px;
+  padding: 0% 5px;
+  overflow: auto;
+}
+
+.feature-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.background-title {
+  margin: 0%;
+  padding: 0%
+}
+
+.feature-sourcebook {
+  margin: 0%;
+  padding: 0%;
+}
+
+.hr-banner {
+  margin: 2% 0%;
+  padding: 0%;
+}
+
+.feature-text {
+  margin: 2% 0%;
 }
